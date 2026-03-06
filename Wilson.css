@@ -1,10 +1,51 @@
-h1{
+c h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     text-align: center;
 }
 
-p{
+p {
     text-align: center;
 
+}
+
+.vascooo {
+    text-align: center;
+}
+
+.WOW {
+    font-size: 56px;
+
+    text-align: center;
+    text-decoration: wavy;
+    font-weight: bolder;
+    image-resolution: 500px;
+}
+
+/* Classe que o JavaScript vai ativar */
+.imagem img.mostrar {
+    display: block;
+}
+
+.imagem {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Cria um espaço entre a imagem e o botão */
+}
+
+/* A imagem começa escondida e com tamanho controlado */
+.imagem img {
+    display: none;
+    max-width: 100%; /* Não deixa a imagem estourar a tela */
+    height: auto;
+    border-radius: 8px; /* Opcional: só para dar um acabamento nos cantos */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Opcional: dá uma profundidade */
+}
+
+/* Classe que o JS vai usar para mostrar */
+.imagem img.revelada {
+    display: block;
 }

@@ -17,16 +17,57 @@
         Rondonia ,
         no hospital São José às 16:30 da tarde.
     </p>
-
+    <hr>
     <p>
-        Infancia: aconteceu un treco ai.
+        Infancia: <br> aconteceu un treco ai.
     </p>
-    <p>adolescencia: se mudou pro Parana em 2022 aos 14 anos, onde estudou durante dois anos no colégio sagrada
+    <hr>
+    <p>adolescencia: <br> se mudou pro Parana em 2022 aos 14 anos, onde estudou durante dois anos no colégio sagrada
         familia.<br>
         Em 2024 ingressou no Instituto Federal do Parana onde agora está no terceiro ano fazendo esse trabalho de
         ProgInt.<br>Ele não faz ideia de como usa o CSS.
     </p>
+    <hr>
+    <div class="vascooo">
+        hobbies do sujeito
 
+        <ul>
+            <li>ouçar musga</li>
+            <li>jogar video jogos</li>
+            <li>morgar</li>
+        </ul>
+        <hr>
+    </div>
+    <div class="WOW">
+        lata do sujeito
+
+    </div>
+    <div class="imagem">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/4/4f/Weezer_-_Blue_Album.jpg" alt="wizer">
+        <button id="revelarBtn">Revelar Imagem</button>
+        <h2 id="mensagemTexto"></h2> 
+
+    </div>
+
+
+
+
+    <script>
+        const btn = document.getElementById('revelarBtn');
+        const foto = document.querySelector('.imagem img');
+
+        btn.onclick = function () {
+            // Liga/Desliga a classe 'mostrar' na imagem
+            foto.classList.toggle('mostrar');
+
+            // Muda o texto do botão
+            if (foto.classList.contains('mostrar')) {
+                btn.textContent = "Esconder";
+            } else {
+                btn.textContent = "Revelar Imagem";
+            }
+        };
+    </script>
 </body>
 
 </html>
