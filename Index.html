@@ -1,103 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilson</title>
+    <title>Blog do Eduardo</title>
+    <link rel="stylesheet" href="Wilson.css">
 </head>
 
 <body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Blog do Eduardo</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                 <li>
+            <a href="https://youtu.be/GlOQnsVOa2o?si=ypoIhlgnZ4sSI_Ad" target="_blank" rel="noopener noreferrer">
+                Sobre
+            </a>
+        </li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1> Blog do Eduardo </h1>
+    <main>
+        <section class="biografia">
+            <article>
+                <h2>Nascimento</h2>
+                <p>Nascido no dia 03 de Dezembro de 2008 na cidade de Ariquemes, RO, no hospital São José às 16:30.</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Infância</h2>
+                <p>Aconteceu um treco aí.</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Adolescência</h2>
+                <p>adolescencia: <br> se mudou pro Parana em 2022 aos 14 anos, onde estudou durante dois anos no colégio
+                    sagrada
 
-    <hr>
-    <link rel="stylesheet" href="Wilson.css">
-    <p>
-        Nascimento: <br>nascido no dia 03 (tres) de Dezembro dois mil e oito<br>na cidade de Ariquemes do estado de
-        Rondonia ,
-        no hospital São José às 16:30 da tarde.
-    </p>
-    <hr>
-    <p>
-        Infancia: <br> aconteceu un treco ai.
-    </p>
-    <hr>
-    <p>adolescencia: <br> se mudou pro Parana em 2022 aos 14 anos, onde estudou durante dois anos no colégio sagrada
-        familia.<br>
-        Em 2024 ingressou no Instituto Federal do Parana onde agora está no terceiro ano fazendo esse trabalho de
-        ProgInt.<br>Ele não faz ideia de como usa o CSS.
-    </p>
+                    familia.<br>
 
-    <hr>
+                    Em 2024 ingressou no Instituto Federal do Parana onde agora está no terceiro ano fazendo esse
+                    trabalho de
 
-    <div class="Hobbies">
-
-        hobbies do sujeito
-
-        <ul>
-
-            <li>escutar musica</li>
-            <li>jogar video jogos</li>
-            <li>ler</li>
-            <li>morgar</li>
-
-        </ul>
+                    ProgInt.<br>Ele não faz ideia de como usa o CSS.</p>
+            </article>
+        </section>
 
         <hr>
 
-    </div>
+        <section class="Hobbies">
+            <h2>Hobbies do sujeito</h2>
+            <ul>
+                <li>Escutar música</li>
+                <li>Jogar vídeo jogos</li>
+                <li>Ler</li>
+                <li>Morgar</li>
+            </ul>
+        </section>
 
-    <div class="bandasCantoresFavoritos">
+        <hr>
 
+        <section class="bandasCantoresFavoritos">
+            <h2>Bandas e Cantores Favoritos</h2>
+            <ul>
+                <li><a href="#">Luiz Gonzaga</a></li>
+                <li><a href="#">IRA</a></li>
+                <li><a href="#">Pink Floyd</a></li>
+                <li>
+            <a href="https://youtu.be/SiJie3Z7DG8?si=yUs0W--Cs-EXH5qv" target="_blank" rel="noopener noreferrer">
+                Weezer
+            </a>
+        </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <figure class="imagem">
+            <figcaption class="WOW">Lata do sujeito</figcaption>
+            <img src="Kinzo.jpg" alt="Foto do Eduardo (estilo Weezer)">
+            <button id="revelarBtn">Revelar Imagem</button>
+            <h2 id="mensagemTexto"></h2>
+        </figure>
+    </main>
+    <aside class="perfil-rapido">
+        <h3>aside</h3>
         <ul>
-
-            <li>Engenheiros do Hawaii</li>
-            <li>Luis Gonzaga</li>
-            <li>IRA</li>
-            <li>Pink Floyd</li>
-            <li>Franz Ferdinand</li>
-            <li>Weezer</li>
-
+            <li><strong>wow</strong></li>
         </ul>
-    </div>
-    <hr>
-    <div class="WOW">
-        lata do sujeito
-
-    </div>
-    <div class="imagem">
-        <img src="Kinzo.jpg" alt="wizer">
-        <button id="revelarBtn">Revelar Imagem</button>
-        <h2 id="mensagemTexto"></h2>
-
-    </div>
-
-
-
+    </aside>
 
     <script>
         const btn = document.getElementById('revelarBtn');
         const foto = document.querySelector('.imagem img');
 
         btn.onclick = function () {
-            // Liga/Desliga a classe 'mostrar' na imagem
             foto.classList.toggle('mostrar');
-
-            // Muda o texto do botão
-            if (foto.classList.contains('mostrar')) {
-                btn.textContent = "Esconder";
-            } else {
-                btn.textContent = "Revelar Imagem";
-            }
+            btn.textContent = foto.classList.contains('mostrar') ? "Esconder" : "Revelar Imagem";
         }
-
     </script>
-
 </body>
-<aside class="barraDoLado">
-    <h1>
-        wow
-    </h1>
-</aside>
+
 </html>
