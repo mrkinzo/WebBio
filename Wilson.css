@@ -39,7 +39,7 @@ p {
 /* A imagem começa escondida e com tamanho controlado */
 .imagem img {
     display: none;
-    max-width: 100%; /* Não deixa a imagem estourar a tela */
+    max-width: 20%; /* Não deixa a imagem estourar a tela */
     height: auto;
     border-radius: 8px; /* Opcional: só para dar um acabamento nos cantos */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Opcional: dá uma profundidade */
