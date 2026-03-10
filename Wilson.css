@@ -1,4 +1,4 @@
-c h1 {
+h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     text-align: center;
@@ -9,7 +9,7 @@ p {
 
 }
 
-.vascooo {
+.Hobbies {
     text-align: center;
 }
 
@@ -48,4 +48,8 @@ p {
 /* Classe que o JS vai usar para mostrar */
 .imagem img.revelada {
     display: block;
+}
+
+.bandasCantoresFavoritos{
+    text-align: center;
 }
