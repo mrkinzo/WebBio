@@ -33,16 +33,20 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Cria um espaço entre a imagem e o botão */
+    gap: 15px;
+    /* Cria um espaço entre a imagem e o botão */
 }
 
 /* A imagem começa escondida e com tamanho controlado */
 .imagem img {
     display: none;
-    max-width: 20%; /* Não deixa a imagem estourar a tela */
+    max-width: 20%;
+    /* Não deixa a imagem estourar a tela */
     height: auto;
-    border-radius: 8px; /* Opcional: só para dar um acabamento nos cantos */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Opcional: dá uma profundidade */
+    border-radius: 8px;
+    /* Opcional: só para dar um acabamento nos cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Opcional: dá uma profundidade */
 }
 
 /* Classe que o JS vai usar para mostrar */
@@ -50,23 +54,26 @@ p {
     display: block;
 }
 
-.bandasCantoresFavoritos{
+.bandasCantoresFavoritos {
     text-align: center;
 }
 
-.main-header{
-    .main-header {
-   background-color: b;
+
+.main-header {
+    background-color: #949292;
     color: #FFFF;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between; /* Joga o logo pra um lado e o menu pro outro */
+    justify-content: space-between;
     align-items: center;
-    position: sticky; /* Faz o header "grudar" no topo ao rolar a página */
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
+    /* Alteração aqui */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* No fixed, ele precisa de largura definida */
+    z-index: 1000;
 }
 
 .main-header h1 {
@@ -74,39 +81,56 @@ p {
     font-size: 1.5rem;
 }
 
-/* Estilo do Menu */
+
+
 .menu ul {
-    list-style: none; /* Remove as bolinhas do tópico */
+    list-style: none;
+    /* Remove as bolinhas/pontos */
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Espaço entre os links */
+    gap: 20px;
 }
-
 
 
 .menu a:hover {
-    color: #3498db; /* Muda de cor ao passar o mouse */
-}
+
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #FFFFFF;
+    /* Cor branca para contrastar com o fundo cinza */
+    font-weight: bold;
+    /* Deixa o texto um pouco mais forte */
+    transition: 0.3s;
+    /* Faz o efeito de hover (ao passar o mouse) ser suave */
 }
 
+
+
 aside {
-    flex: 1; /* Ocupa 1 parte do espaço (fica menor que o main) */
+    flex: 0.5;
+    /* Ocupa 1 parte do espaço (fica menor que o main) */
     background-color: #000000;
     padding: 15px;
     border-radius: 8px;
-    border-left: 5px solid #007bff; /* Um detalhe azul pra ficar chique */
+    border-left: 5px solid #007bff;
+    /* Um detalhe azul pra ficar chique */
     color: #FFFF;
 }
+
 body {
     display: flex;
-    flex-wrap: wrap; /* Faz o conteúdo quebrar linha no celular */
+    flex-wrap: wrap;
+    /* Faz o conteúdo quebrar linha no celular */
     gap: 20px;
     padding: 20px;
+    padding-top: 80px;
+    margin: 0;
 }
 
 main {
-    flex: 3; /* Ocupa 3 partes do espaço */
+    flex: 3;
+    /* Ocupa 3 partes do espaço */
     min-width: 300px;
-    
+
 }
